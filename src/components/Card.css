@@ -1,0 +1,41 @@
+.Card {
+  background-color:#9eebcf;
+  display: inline-block;
+  border-radius: 0.5rem;
+  border-width: 0.25rem;
+  padding: 0.3rem;
+  margin: 0.6rem;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  transform-origin: left top;
+  transition: transform 1s;
+  border-width: 0.25rem;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.05);
+}
+
+.Card:hover,
+.Card:focus {
+  transform: scale(1.05);
+  /* transform: rotate(360deg); */
+  /* transform: translate(20px, 20px); */
+  /* transform: skewX(25deg);
+	transform: skewY(10deg); */
+  /* transform: skew(25deg, 10deg); */
+  /* transform: rotate(720deg); */
+  /* Can do Combined transform */
+  /* transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%); */
+}
